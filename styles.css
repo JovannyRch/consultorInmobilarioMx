@@ -1,24 +1,38 @@
+html { /* body won't work ¯\_(ツ)_/¯ */
+    scroll-snap-type: y mandatory;
+  }
 * {
     margin: 0;
     padding: 0;
     border: 0;
-    font-family: 'Arvo', serif;
+    font-family: 'Bebas Neue', serif;
+    font-size: 10px;
 }
 
+section {
+    height: 100vh;
+    scroll-snap-align: start;
+  }
 
-body{
-    padding: 22px;
-}
+
 
 a, a:hover, a:focus, a:active {
     text-decoration: none;
     color: inherit;
 }
 
+.build-image-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
 .menu-container{
     display: flex;
     flex-direction: column;
-    height: 91;
+    height: 91px;
 }
 
 
@@ -28,6 +42,9 @@ a, a:hover, a:focus, a:active {
     cursor: pointer;
     padding: 5px;
 }
+.menu-item-link{
+    font-size: 1.8rem;
+}
 
 .menu-item:hover{
     transform: translateY(-3px);
@@ -35,9 +52,11 @@ a, a:hover, a:focus, a:active {
 }
 
 .header-menu-button{
+    width: 100%;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+    padding-top: 2.2rem;
 }
 
 .header-title-container{
@@ -50,8 +69,8 @@ a, a:hover, a:focus, a:active {
 
 .header-title{
     font-weight: 400;
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 4.8rem;
+    line-height: 3rem;
     padding-left: 2%;
     padding-right: 2%;
 }
@@ -59,7 +78,7 @@ a, a:hover, a:focus, a:active {
 .header-line{
     flex-grow: 100;
     background-color: black;
-    height: 10px;
+    height: 1rem;
 }
 
 .content-description-container{
@@ -73,8 +92,8 @@ a, a:hover, a:focus, a:active {
 .content-description-text{
     text-align: center;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 1.9rem;
+    line-height: 1.8rem;
 }
 
 .build-image{
@@ -99,8 +118,8 @@ a, a:hover, a:focus, a:active {
     margin-bottom: 12vh;
     text-align: center;
     font-weight: 400;
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 4.8rem;
+    line-height: 3rem;
 }
 
 
@@ -121,23 +140,23 @@ a, a:hover, a:focus, a:active {
 
 .services-description{
     font-weight: 400;
-    font-size: 13px;
-    line-height: 18px;
+    font-size: 3rem;
+    line-height: 3.8rem;
     text-align: center;
-    margin-top: 25px;
+    margin-top: 2.5rem;
 }
 
 .services-description-pop-up{
-    margin-top: 30px;
+    margin-top: 3rem;
     width: 80%;
-    background: #98BFC7 80%;
-    min-height: 53px;
+    background: #000;
+    min-height: 5.3rem;
     border-radius: 5px;
-    padding: 16px;
+    padding: 1.6rem;
     font-weight: 400;
-    font-size: 13px;
-    line-height: 16px;
-    color: #36474D;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: white;
     text-align: center;
 }
 
@@ -192,17 +211,19 @@ a, a:hover, a:focus, a:active {
     margin-bottom: 2vh;
     text-align: center;
     font-weight: 400;
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 4.8rem;
+    line-height: 3rem;
 }
 
 .contacto-description{
     width: 30%;
     text-align: center;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    margin-top: 18px;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    margin-top: 1.8rem;
+    font-weight: 400;
+    font-family: 'Roboto';
 }
 
 .contacto-description-container{
@@ -244,40 +265,45 @@ a, a:hover, a:focus, a:active {
 .detail-item-data{
     width: 90%;
     font-family: Arvo;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 20px;
+    line-height: 2rem;
     letter-spacing: 0em;
     text-align: left;
+    font-family: 'Roboto';
 }
 
 input[type="text"] {
-    background: #98BFC7 80%;
+    background: #000;
     height: 30px;
     border: none;
     padding-left: 5px;
     padding-top: 3px;
-    width: 35%;
+    width: 55%;
     margin-bottom: 10px;
-    color: #36474D;
-
+    color: white;
   }
 
   textarea{
-    background: #98BFC7 80%;
+    background: #000;
     height: 60px;
     border: none;
     padding-left: 5px;
     padding-top: 3px;
-    width: 35%;
+    width: 55%;
     margin-bottom: 10px;
-    color: #36474D;
+    color: white;
+  }
 
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    font-size: 1.6rem;
   }
 
 
   .contacto-form-button-container {
+    
       margin-top: 10px;
       display:flex;
       width: 35%;
@@ -285,10 +311,15 @@ input[type="text"] {
   }
 
   .contacto-form-button{
-    background: #98BFC7 80%;
+    background: #000;
+    color: white;
     padding: 4px;
     padding-left: 22px;
     padding-right: 22px;
     border-radius: 10px;
-    color: #36474D;
+    font-size: 1.6rem;
   }
+
+  .services-img{
+    width: auto;
+}
