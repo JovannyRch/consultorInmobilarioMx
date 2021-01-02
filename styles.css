@@ -353,3 +353,42 @@ input[type="text"] {
 .focus{
     font-size: 3.8rem;
 }
+
+.parallax {
+    /* The image used */
+    background-image: url("./assets/img/builds.png");
+  
+    /* Set a specific height */
+    height: 100vh;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .description-dark{
+    background-image: url("./assets/img/builds.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .description-dark-text-container{
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0,0,0,0.7);
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .description-dark-text-container p{
+      font-weight: 400;
+      font-size: 4.8rem;
+      text-align: center;
+      color: white;
+  }
