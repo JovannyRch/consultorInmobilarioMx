@@ -164,6 +164,7 @@ a, a:hover, a:focus, a:active {
     line-height: 1.6rem;
     color: white;
     text-align: center;
+    font-family: 'Roboto';
 }
 
 .service-image-container{
@@ -331,4 +332,24 @@ input[type="text"] {
 
   .services-img{
     width: auto;
+}
+
+.social-container{
+    height: 5vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}   
+
+
+.social-container img {
+    margin: 11px;
+}
+
+
+.focus{
+    font-size: 3.8rem;
 }
