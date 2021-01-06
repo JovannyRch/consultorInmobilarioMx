@@ -476,7 +476,7 @@ input[type="text"] {
 
 
   
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: 800px) {
 
 
     
@@ -522,9 +522,6 @@ input[type="text"] {
         font-size: calc(30px + (24 - 16)*(100vw - 400px)/(800 - 400));
     }
 
-    #contacto{
-       /*  border: 10px solid pink; */
-    }
 
 
     .screen-title{
