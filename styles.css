@@ -408,6 +408,71 @@ input[type="text"] {
 }
 
 
+@media only screen and (max-width: 1000px) {
+
+    
+    section {
+        height: auto;
+    }
+    .section{
+        height: calc(100vh - 7.5rem);
+    }
+
+    .services-images-container{
+        display: flex;
+        flex-wrap: wrap;
+      /*   border: 5px solid orange; */
+    }
+
+    #contacto{
+       /*  border: 10px solid pink; */
+    }
+    
+    #servicios{
+       /*  border: 10px solid green; */
+        min-height: 120vh;
+    }
+ 
+    .services-images-item{
+        flex: 1 0 35%; /* explanation below */
+        margin: 5px;
+        height: 35vh;
+    }
+
+    .services-img{
+        height: 100px;
+    }
+
+    .description-dark{
+        height: 100vh;
+    }
+
+    .services-description{
+        font-weight: 400;
+        font-size: calc(18px + (24 - 16)*(100vw - 400px)/(800 - 400));
+        line-height: 3.8rem;
+        text-align: center;
+        margin-top: 2.5rem;
+    }
+
+    .focus{
+        font-size: calc(23px + (24 - 16)*(100vw - 400px)/(800 - 400));
+    }
+
+    .contacto-form-container-item{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+    
+    
+  }
+
+
 
 
   
@@ -487,67 +552,4 @@ input[type="text"] {
   }
 
   
-  @media screen and (max-width: 1000px) {
-
-    
-    section {
-        height: auto;
-    }
-    .section{
-        height: calc(100vh - 7.5rem);
-    }
-
-    .services-images-container{
-        display: flex;
-        flex-wrap: wrap;
-      /*   border: 5px solid orange; */
-    }
-
-    #contacto{
-       /*  border: 10px solid pink; */
-    }
-    
-    #servicios{
-       /*  border: 10px solid green; */
-        min-height: 120vh;
-    }
- 
-    .services-images-item{
-        flex: 1 0 35%; /* explanation below */
-        margin: 5px;
-        height: 35vh;
-    }
-
-    .services-img{
-        height: 100px;
-    }
-
-    .description-dark{
-        height: 100vh;
-    }
-
-    .services-description{
-        font-weight: 400;
-        font-size: calc(18px + (24 - 16)*(100vw - 400px)/(800 - 400));
-        line-height: 3.8rem;
-        text-align: center;
-        margin-top: 2.5rem;
-    }
-
-    .focus{
-        font-size: calc(23px + (24 - 16)*(100vw - 400px)/(800 - 400));
-    }
-
-    .contacto-form-container-item{
-        width: 80%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
-
-    
-    
-  }
 
