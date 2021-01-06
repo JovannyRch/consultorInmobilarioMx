@@ -78,7 +78,7 @@ a, a:hover, a:focus, a:active {
 
 .header-title{
     font-weight: 400;
-    font-size: 4.8rem;
+    font-size: calc(25px + (24 - 16)*(100vw - 400px)/(800 - 400));
     line-height: 3rem;
     padding-left: 2%;
     padding-right: 2%;
@@ -119,12 +119,12 @@ a, a:hover, a:focus, a:active {
     width: 100%;
 }
 
-.services-title{
+.screen-title{
     margin-top: 17vh;
     margin-bottom: 12vh;
     text-align: center;
     font-weight: 400;
-    font-size: 4.8rem;
+    font-size: calc(25px + (24 - 16)*(100vw - 400px)/(800 - 400));
     line-height: 3rem;
 }
 
@@ -147,10 +147,14 @@ a, a:hover, a:focus, a:active {
 
 .services-description{
     font-weight: 400;
-    font-size: 3rem;
+    font-size: calc(14px + (24 - 16)*(100vw - 400px)/(800 - 400));
     line-height: 3.8rem;
     text-align: center;
     margin-top: 2.5rem;
+}
+
+.focus{
+    font-size: calc(18px + (24 - 16)*(100vw - 400px)/(800 - 400));
 }
 
 .services-description-pop-up{
@@ -223,14 +227,6 @@ a, a:hover, a:focus, a:active {
     width: 100%;
 }
 
-.contacto-title{
-    margin-top: 17vh;
-    margin-bottom: 2vh;
-    text-align: center;
-    font-weight: 400;
-    font-size: 4.8rem;
-    line-height: 3rem;
-}
 
 .contacto-description{
     width: 30%;
@@ -342,7 +338,7 @@ input[type="text"] {
 
   .services-img{
     width: auto;
-}
+  }
 
 .social-container{
     height: 5vh;
@@ -360,9 +356,7 @@ input[type="text"] {
 }
 
 
-.focus{
-    font-size: 3.8rem;
-}
+
 
 .parallax {
     /* The image used */
@@ -398,7 +392,164 @@ input[type="text"] {
 
   .description-dark-text-container p{
       font-weight: 400;
-      font-size: 4.8rem;
+      font-size: calc(25px + (24 - 16)*(100vw - 400px)/(800 - 400));
       text-align: center;
       color: white;
+  }
+
+  
+  .contacto-form-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    width: 100% !important;
+}
+
+
+ 
+  
+  @media screen and (max-width: 1100px) {
+
+    
+    section {
+        height: auto;
+    }
+    .section{
+        height: calc(100vh - 7.5rem);
+    }
+
+    .services-images-container{
+        display: flex;
+        flex-wrap: wrap;
+      /*   border: 5px solid orange; */
+    }
+
+    #contacto{
+       /*  border: 10px solid pink; */
+    }
+    
+    #servicios{
+       /*  border: 10px solid green; */
+        min-height: 120vh;
+    }
+ 
+    .services-images-item{
+        flex: 1 0 35%; /* explanation below */
+        margin: 5px;
+        height: 35vh;
+    }
+
+    .services-img{
+        height: 100px;
+    }
+
+    .description-dark{
+        height: 100vh;
+    }
+
+    .services-description{
+        font-weight: 400;
+        font-size: calc(18px + (24 - 16)*(100vw - 400px)/(800 - 400));
+        line-height: 3.8rem;
+        text-align: center;
+        margin-top: 2.5rem;
+    }
+
+    .focus{
+        font-size: calc(23px + (24 - 16)*(100vw - 400px)/(800 - 400));
+    }
+
+    .contacto-form-container-item{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+    
+    
+  }
+
+
+  
+  @media screen and (max-width: 650px) {
+
+
+    
+    .services-images-container{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        width: 100vw;
+    }
+
+    .services-images-item{
+        height: 50vh;
+    }
+
+
+    section {
+        height: auto;
+    }
+
+
+    
+
+    
+    .services-description{
+        font-weight: 400;
+        font-size: calc(25px + (24 - 16)*(100vw - 400px)/(800 - 400));
+        line-height: 3.8rem;
+        text-align: center;
+        margin-top: 2.5rem;
+    }
+
+    .services-images-item{
+       min-height: 49vh;
+    }
+
+    #servicios{
+        min-height: 280vh;
+    }
+
+
+    .focus{
+        font-size: calc(30px + (24 - 16)*(100vw - 400px)/(800 - 400));
+    }
+
+    #contacto{
+       /*  border: 10px solid pink; */
+    }
+
+
+    .screen-title{
+        margin-top: 17vh;
+        margin-bottom: 12vh;
+        text-align: center;
+        font-weight: 400;
+        font-size: calc(42px + (24 - 16)*(100vw - 400px)/(800 - 400));
+        line-height: 3rem;
+    }
+
+    .services-description-pop-up{
+        width: 80vw;
+    }
+
+
+    .contacto-form-container-item {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+   
+ 
+    
   }
