@@ -1,0 +1,96 @@
+@media only screen and (max-width: 768px) {
+  .services-images-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
+
+  .services-images-item {
+    height: 50vh;
+  }
+
+  .services-description {
+    font-weight: 400;
+    font-size: calc(25px + (24 - 16) * (100vw - 400px) / (800 - 400));
+    line-height: 3.8rem;
+    text-align: center;
+    margin-top: 2.5rem;
+  }
+
+  .services-images-item {
+    min-height: 30vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .focus {
+    font-size: calc(30px + (24 - 16) * (100vw - 400px) / (800 - 400));
+  }
+
+  .screen-title {
+    margin-top: 17vh;
+    margin-bottom: 12vh;
+    text-align: center;
+    font-weight: 400;
+    font-size: calc(42px + (24 - 16) * (100vw - 400px) / (800 - 400));
+    line-height: 3rem;
+  }
+
+  .services-description-pop-up {
+    width: 80vw;
+  }
+
+  .contacto-form-container-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .parallax {
+    /* The image used */
+    background-image: none;
+  }
+
+  body {
+    background-image: url("./assets/img/builds.png");
+
+    /* Set a specific height */
+    height: 70vh;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .description-dark {
+    background-image: none;
+  }
+
+  #contacto {
+    background-color: #fff;
+    padding-top: 10vh;
+  }
+
+  #servicios {
+    /*  border: 10px solid green; */
+    background-color: #fff;
+    min-height: 150vh;
+  }
+
+  .header-title {
+    font-weight: 400;
+    font-size: calc(30px + (24 - 16) * (100vw - 400px) / (800 - 400));
+    line-height: 3rem;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+}
