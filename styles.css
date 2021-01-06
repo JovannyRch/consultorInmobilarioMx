@@ -349,7 +349,7 @@ textarea {
 }
 
 body {
-  background-image: url("./assets/img/builds.png");
+  background-image: url("./assets/img/bg.svg");
   /* Set a specific height */
   height: 70vh;
   /* Create the parallax scrolling effect */
@@ -359,8 +359,16 @@ body {
   background-size: cover;
 }
 
+#contacto {
+  background-color: #fff;
+}
+
+#servicios {
+  background-color: #fff;
+}
+
 .description-dark-text-container {
-  height: 100%;
+  height: 100vh;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   display: flex;
@@ -403,7 +411,7 @@ body {
   #servicios {
     /*  border: 10px solid green; */
     background-color: #fff;
-    min-height: 120vh;
+    min-height: 100vh;
   }
 
   .services-images-item {
@@ -502,7 +510,7 @@ body {
   }
 
   body {
-    background-image: url("./assets/img/builds.png");
+    background-image: url("./assets/img/bg.svg");
 
     /* Set a specific height */
     height: 70vh;
