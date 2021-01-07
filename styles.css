@@ -149,14 +149,14 @@ a:active {
 
 .services-description-pop-up {
   margin-top: 3rem;
-  width: 80%;
+  width: 50%;
   background: #000;
   min-height: 5.3rem;
   border-radius: 5px;
   padding: 1.6rem;
   font-weight: 400;
-  font-size: 1.4rem;
-  line-height: 1.6rem;
+  font-size: 2.2rem;
+  line-height: 2.5rem;
   color: white;
   text-align: center;
   font-family: "Roboto";
@@ -219,7 +219,7 @@ a:active {
   width: 30%;
   text-align: center;
   font-weight: 400;
-  font-size: 1.6rem;
+  font-size: 2.4rem;
   line-height: 2rem;
   margin-top: 1.8rem;
   font-weight: 400;
@@ -354,9 +354,9 @@ body {
   height: 70vh;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 70%;
 }
 
 #contacto {
@@ -365,6 +365,7 @@ body {
 
 #servicios {
   background-color: #fff;
+  min-height: 100vh;
 }
 
 .description-dark-text-container {
@@ -543,5 +544,17 @@ body {
     line-height: 3rem;
     padding-left: 2%;
     padding-right: 2%;
+    
+  }
+
+  .contacto-description {
+    width: 30%;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    margin-top: 1.8rem;
+    font-weight: 400;
+    font-family: "Roboto";
   }
 }
