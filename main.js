@@ -30,6 +30,7 @@ $( "#item3" ).hover(
 
 
 
+
 $( "#item4" ).hover(
   function() {
     $("#description-4").addClass( "hide" );

@@ -137,10 +137,11 @@ a:active {
 
 .services-description {
   font-weight: 400;
-  font-size: calc(14px + (24 - 16) * (100vw - 400px) / (800 - 400));
+  font-size: calc(12px + (24 - 16) * (100vw - 400px) / (800 - 400));
   line-height: 3.8rem;
   text-align: center;
   margin-top: 2.5rem;
+  width: 75%;
 }
 
 .focus {
@@ -183,6 +184,7 @@ a:active {
 
 #item1:hover + .hide1 {
   display: block;
+  animation: fade 0.5s ease;
 }
 
 .hide2 {
@@ -191,6 +193,7 @@ a:active {
 
 #item2:hover + .hide2 {
   display: block;
+  animation: fade 0.5s ease;
 }
 
 .hide3 {
@@ -199,6 +202,7 @@ a:active {
 
 #item3:hover + .hide3 {
   display: block;
+  animation: fade 0.5s ease;
 }
 
 .hide4 {
@@ -207,6 +211,7 @@ a:active {
 
 #item4:hover + .hide4 {
   display: block;
+  animation: fade 0.5s ease;
 }
 
 .contacto-container {
@@ -443,6 +448,7 @@ body {
 
   .services-description {
     font-weight: 400;
+
     font-size: calc(18px + (24 - 16) * (100vw - 400px) / (800 - 400));
     line-height: 3.8rem;
     text-align: center;
@@ -481,6 +487,7 @@ body {
     line-height: 3.8rem;
     text-align: center;
     margin-top: 2.5rem;
+   
   }
 
   .services-images-item {
@@ -569,4 +576,9 @@ body {
     font-weight: 400;
     font-family: "Roboto";
   }
+}
+
+@keyframes fade {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
 }
