@@ -56,9 +56,9 @@
                     <h2 class="screen-title">Servicios</h2>
                 </div>
                 <div class="services-images-container">
-                    <div data-aos="fade-up" data-aos-duration="1500" class="services-images-item" " > 
+                    <div id="item1" data-aos="fade-up" data-aos-duration="1500" class="services-images-item" > 
                         <div 
-                         class=" service-image-container" id="item1">
+                         class=" service-image-container" >
                         <img class="services-img" src="./assets/img/Recurso 2.svg" alt="">
                         <p class="services-description" id="description-1">
                             Concepto y Desarrollo <br>
@@ -70,9 +70,9 @@
                     </div>
                 </div>
 
-                <div data-aos="fade-up" data-aos-duration="1500" class="services-images-item">
+                <div id="item2" data-aos="fade-up" data-aos-duration="1500" class="services-images-item">
 
-                    <div id="item2" class="service-image-container">
+                    <div class="service-image-container">
                         <img class="services-img" src="./assets/img/Recurso 3.svg" alt="">
                         <p class="services-description" id="description-2">
                             Revitalización De <br>
@@ -87,8 +87,8 @@
 
                 </div>
 
-                <div data-aos="fade-up" data-aos-duration="1500" class="services-images-item">
-                    <div id="item3" class="service-image-container">
+                <div id="item3" data-aos="fade-up" data-aos-duration="1500" class="services-images-item">
+                    <div  class="service-image-container">
                         <img class="services-img" src="./assets/img/Recurso 4.svg" alt="">
                         <p class="services-description" id="description-3">
                             <span class="focus">
@@ -105,8 +105,8 @@
 
                 </div>
 
-                <div data-aos="fade-up" data-aos-duration="1500" class="services-images-item">
-                    <div id="item4" class="service-image-container">
+                <div id="item4" data-aos="fade-up" data-aos-duration="1500" class="services-images-item">
+                    <div  class="service-image-container">
                         <img class="services-img" src="./assets/img/Recurso 5.svg" alt="">
                         <p class="services-description" id="description-4">
                             <span class="focus">Proyectos</span> <br>
@@ -142,19 +142,20 @@
         <div class="contacto-form-container">
 
             <div class="contacto-form-container-item">
-                <input type="text" placeholder="Nombre" class="contacto-form-item">
-                <input type="text" placeholder="Teléfono" class="contacto-form-item">
-                <input type="text" placeholder="Correo" class="contacto-form-item">
-                <textarea placeholder="Mensaje" name="" id="" cols="30" rows="10"></textarea>
+                <input id="name" type="text" placeholder="Nombre" class="contacto-form-item">
+                <input id="phone" type="text" placeholder="Teléfono" class="contacto-form-item">
+                <input id="email" type="text" placeholder="Correo" class="contacto-form-item">
+                <textarea id="message" placeholder="Mensaje" name="" id="" cols="30" rows="10"></textarea>
                 <div class="contacto-form-button-container">
-                    <button class="contacto-form-button">Enviar</button>
+                    <button id="contact-button" class="contacto-form-button">Enviar</button>
                 </div>
             </div>
 
         </div>
         <div class="social-container">
-            <img id="fb-icon" src="./assets/icons/fb-icon.svg" alt="facebook-icon">
-
+            <a target="_blank" href="https://www.facebook.com/inmobiliariomx/">
+                <img id="fb-icon" src="./assets/icons/fb-icon.svg" alt="facebook-icon">
+            </a>
         </div>
 
     </section>

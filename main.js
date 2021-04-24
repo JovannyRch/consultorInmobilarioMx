@@ -45,3 +45,10 @@ $("#fb-icon").click(
      //TODO: Link to FB page
   }
 );
+
+$("#contact-button").click(
+  function () {
+    let name = $("$name").val();
+    alert("name", name);
+  }
+);
