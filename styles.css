@@ -530,8 +530,8 @@ body {
   }
 
   body {
-    background-image: url("./assets/img/bg.svg");
-
+    background-image: url("./assets/img/portada-2.svg");
+    background-size: 768px;
     /* Set a specific height */
     height: 70vh;
 
