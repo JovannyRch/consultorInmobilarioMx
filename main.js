@@ -48,7 +48,10 @@ $("#fb-icon").click(
 
 $("#contact-button").click(
   function () {
-    let name = $("$name").val();
-    alert("name", name);
+    let name = $("#name").val();
+    let phone = $("#phone").val();
+    let email = $("#email").val();
+    let message = $("#message").val();
+    console.log(message);
   }
 );

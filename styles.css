@@ -314,7 +314,7 @@ textarea {
 .contacto-form-button-container {
   display: flex;
   width: 55%;
-  flex-direction: row-reverse;
+  justify-content: center;
 }
 
 .contacto-form-button {
@@ -338,7 +338,7 @@ textarea {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 80px;
+  margin-top: 40px;
   padding-bottom: 100px;
 }
 
@@ -402,7 +402,6 @@ body {
 }
 
 @media only screen and (max-width: 900px) {
-
   .contacto-description {
     width: 30%;
     text-align: center;
@@ -489,7 +488,6 @@ body {
     line-height: 3.8rem;
     text-align: center;
     margin-top: 2.5rem;
-   
   }
 
   .services-images-item {
@@ -517,8 +515,6 @@ body {
   .services-description-pop-up {
     width: 80vw;
   }
-
-  
 
   .contacto-form-container-item {
     width: 100%;
@@ -567,7 +563,6 @@ body {
     line-height: 3rem;
     padding-left: 2%;
     padding-right: 2%;
-    
   }
 
   .contacto-description {
@@ -583,6 +578,17 @@ body {
 }
 
 @keyframes fade {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#contact-button {
+  color: white;
+}
+#contact-button:hover {
+  color: white;
 }
