@@ -363,7 +363,8 @@ body {
   background-attachment: fixed;
   background-position: bottom;
   background-repeat: no-repeat;
-  background-size: 100% 70%;
+  background-size: 100% 100%;
+
 }
 
 #contacto {
@@ -530,16 +531,20 @@ body {
   }
 
   body {
-    background-image: url("./assets/img/portada-2.svg");
-    background-size: 768px;
+    background-image: url("./assets/img/portada.svg");
+    background-size: 100% 100%;
     /* Set a specific height */
     height: 70vh;
-
-    /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    
+
+    /* Create the parallax scrolling effect */
+   /*  
+    
+    
+    
   }
 
   .description-dark {
